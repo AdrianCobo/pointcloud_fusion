@@ -21,6 +21,8 @@ find_package(tf2_geometry_msgs REQUIRED)
 find_package(image_geometry REQUIRED)
 find_package(visualization_msgs REQUIRED)
 
+include_directories(include)
+
 include_directories(${OpenCV_INCLUDE_DIRS})
 link_directories(${OpenCV_LIBRARY_DIRS})
 add_definitions(${OpenCV_DEFINITIONS})
